@@ -1,0 +1,73 @@
+body{
+    width: 960px;
+    margin: 15px auto;
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0 0 15px 0;
+}
+
+p, li{
+    line-height: 25px;
+}
+
+li{
+    list-style: none;
+}
+
+li > a{
+    text-decoration: none;
+    counter-reset: blue;
+}
+
+header#page_header{
+    width: 75%;
+}
+
+#page_header h1{
+    text-shadow: 4px 2px 2px gray;
+    text-align: center;
+}
+
+
+#page_header nav ul li{
+    font-size: 20px;
+}
+
+#page_header nav ul, #sidebar nav ul, #page_footer nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+section#posts{
+    float: left;
+    width: 75%;
+    line-height: 40px; 
+    /* 줄간격 */
+    text-align: justify;
+    /* 글을 양쪽 긑으로 맞춰줌 */
+}
+
+aside#sidebar{
+    float: right;
+    width: 25%;
+}
+
+a:hober{
+    font-weight: bold;
+}
+
+header li, footer li {
+    float: left;
+    margin-right: 30px;
+}
+
+footer#page_footer{
+    clear: both;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+    

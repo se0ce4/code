@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+
+        <table border="1">
+            <tr>
+            <td width="110px">아이디</td>
+            <td width="440px">
+                <input type="text" name="id" id="id" size="30"
+                min="6" max="10" style="ime-mode:inactive"
+                placeholder="(최소6~최대10, 숫자와 알파벳만 사용)">
+            </td>
+        </tr>
+        <tr>
+            <td width="110px">비밀번호</td>
+            <td width="440px">
+                <input type="password" name="password" id="password" size="10">
+                (최소6~최대10, 숫자와 알파벳만 사용)
+            </td>
+        </tr>
+        <tr>
+            <td width="110px">비밀번호 확인</td>
+            <td width="440px">
+                <input type="password" name="password" id="password" size="10">
+                (최소6~최대10, 숫자와 알파벳만 사용)
+            </td>
+        </tr>
+        <tr>
+            <td width="110px">우편번호</td>
+            <td width="440px">
+                <input type="number" name="add" size="10">-
+                <input type="number" name="add" size="10">
+            </td>
+        </tr>
+        <tr>
+            <td width="110px">성별</td>
+            <td width="440px">
+                <input type="radio" name="gender" id="man"> 남자
+                <input type="radio" name="gender" id="woman"> 여자
+            </td>
+        </tr>
+        <tr>
+            <td width="110px">전화번호</td>
+            <td width="440px">
+                <input type="tel" name="tel" size="4">-
+                <input type="tel" name="tel" size="6">-
+                <input type="tel" name="tel" size="6">
+            </td>
+        </tr>
+        <tr>
+            <td width="110px">이메일</td>
+            <td width="440px">
+                <input type="email" name="email" id="eamil1" size="10">@
+                <select name="email" id="email2">
+                    <option value="selectemail" selected>메일주소선택</option>
+                    <option value="gamil">gamil.com</option>
+                    <option value="naver">naver.com</option>
+                    <option value="etc">기타</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td width="110px">취미</td>
+            <td width="440px">
+                <input type="checkbox" name="hobby">등산
+                <input type="checkbox" name="hobby">독서
+                <input type="checkbox" name="hobby">스키
+                <input type="checkbox" name="hobby">음악
+                <input type="checkbox" name="hobby">영화
+            </td>
+        </tr>
+        <tr>
+            <td width="110px">자기소개</td>
+            <td width="440px">
+                <textarea name="textarea" id="textarea" cols="50" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="입력"/>
+                <input type="reset" value="취소"/>
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>

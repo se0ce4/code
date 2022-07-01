@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap > div{
+            width: 25vw;
+            height: 5vh;
+            text-align: center;
+            font-size: 1.3em;
+            font-family: sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            /* float: left; */
+            padding-top: 1.5vh;
+        }
+        .wrap:not(#mwrap){
+            display: none;
+            width: 24vw;
+            margin-right: 1vw;
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: 300;            
+            background-color: whitesmoke;
+            float: left;
+            color: darkslategray;
+            box-shadow: 5px 5px 10px gray;
+        }
+        #mwrap:hover .inner{
+            display: block;
+        }
+        #mwrap{
+            color: white;
+            float: left;
+        }
+        .menuhome{
+            background-color: lightseagreen;
+            float: left;
+        }
+        .menubar{
+            background-color: lightsteelblue;
+            transition: background-color 2s;
+            float: left;
+        }
+        .menubar:hover {
+            background-color: gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrap" id="mwrap">
+        <div class="menuhome" id="home">Home</div>
+        <div class="menubar" id="news">News</div>
+        <div class="menubar" id="contact">Contact</div>
+        <div class="menubar" id="about">About</div>
+    </div>
+    <div class="wrap" id="hwrap">
+        <div class="inner" id="home1">Home1</div>
+        <div class="inner" id="home2">Home2</div>
+        <div class="inner" id="home3">Home3</div>
+    </div>
+    <div class="wrap" id="nwrap">
+        <div class="inner" id="news1">news1</div>
+        <div class="inner" id="news2">news2</div>
+        <div class="inner" id="news3">news3</div>
+    </div>
+    <div class="wrap" id="cwrap">
+        <div class="inner" id="contact1">contact1</div>
+        <div class="inner" id="contact2">contact2</div>
+        <div class="inner" id="contact3">contact3</div>
+    </div>
+    <div class="wrap" id="awrap">
+        <div class="inner" id="about1">about1</div>
+        <div class="inner" id="about2">about2</div>
+        <div class="inner" id="about3">about3</div>
+    </div>
+</body>
+</html>

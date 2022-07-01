@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="Test">Test</h1> -->
+
+    <table border="1">
+        <tr>
+            <td>학번</td>
+            <td>이름</td>
+            <td>국어</td>
+            <td>영어</td>
+            <td>수학</td>
+            <td>총점</td>
+            <td>평균</td>
+            <td>등급</td>
+    </tr>
+        <tr>
+            <td id="num">num</td>
+            <td id="name">name</td>
+            <td id="kor">kor</td>
+            <td id="eng">eng</td>
+            <td id="math">math</td>
+            <td id="sum">tot</td>
+            <td id="avg">avg</td>
+            <td id="lev">lev</td>
+        </tr>
+    </table>
+
+    <script>
+        // var Text1 = prompt("입력해라");
+        // var h1 = document.getElementById("Test");
+        // h1.innerText = Text1;
+
+        let stuNum = prompt('학번을 입력하세요');
+        let stuName = prompt('이름을 입력하세요');
+
+        let korScore = Number(prompt('국어 점수를 입력하세요'));
+        let engScore = Number(prompt('영어 점수를 입력하세요'));
+        let mathScore = Number(prompt('수학 점수를 입력하세요'));
+
+        let sumScore = korScore + engScore + mathScore;
+        let avgScore = (sum/3).toFixed(2);
+        let level = "";
+
+        let num = document.getElementById("num");
+        let name = document.getElementById("name");
+
+        let kor = document.getElementById("kor");
+        let eng = document.getElementById("eng");
+        let math = document.getElementById("math");
+
+        let sum = document.getElementById("sum");
+        let avg = document.getElementById("avg");
+        let lev = document.getElementById("lev");
+
+        num.innerText = stuNum;
+        name.innerText = stuName;
+
+        kor.innerText = korScore;
+        eng.innerText = engScore;
+        math.innerText = mathScore;
+        
+        sum.innerText = mathScore;
+        avg.innerText = mathScore;
+        lev.innerText = mathScore;
+        
+        </script>
+
+</body>
+</html>

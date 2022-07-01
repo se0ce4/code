@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin-top: 1vh;
+            margin-left: 2.5vw;
+            margin-right: 2.5vw;
+        }
+        div{
+            width: 25vw;
+            height: 5vh;
+            padding-top: 1.5vh;
+            float: left;
+            text-align: center;
+            font-size: 1.3em;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+        }
+        .menuhome{
+            background-color: lightseagreen;
+        }
+        .menubar{
+            background-color: lightsteelblue;
+            transition: background-color 2s;
+        }
+        .menubar:hover{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Vertical Navigation Bar</h2>
+    <br>
+    <div class="menuhome" id="home">Home</div>
+    <div class="menubar" id="news">News</div>
+    <div class="menubar" id="contact">Contact</div>
+    <div class="menubar" id="about">About</div>
+</body>
+</html>

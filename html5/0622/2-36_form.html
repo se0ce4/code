@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Basic</title>
+</head>
+<body>
+    <form form="get" enctype="multipart/form-data">
+        <!-- 
+            name : 폼의 이름
+            action : 폼의 데이터가 전송되는 백엔드 url
+            method : 폼 전송 방식(get/post)
+            enctype : 폼 데이터가 서버로 제출될 때 해당 데이터가 인코딩 되는 방식
+        -->
+        <input type="text" name="id" size="30" maxlength="5" 
+        value="초기값" placeholder="아이디 입력" required/><br />
+        <!-- 
+            size : 보여지는 입력 가능한 텍스트 길이
+            maxlength : 실제 입력 가능한 텍스트 길이
+            value : 입력되어 있는 초기값
+            placeholder : 입력되어있지 않고 띄워서 보여주는 정보 / 도움말
+            required : 필수 입력값
+         -->
+        <input type="button" value="버튼"/><br />
+        <button>버튼2</button><br />
+        <input type="checkbox" name="hobby" checked value="1"/>등산
+        <input type="checkbox" name="hobby" value="2"/>영화
+        <input type="checkbox" name="hobby" value="3"/>음악<br />
+        <!-- 
+            checkbox : 다중 선택이 가능
+            checked : 체크된 상태로 보여짐
+            value : 등산을 체크하면 hobby라는 name으로 1값이 전달됨
+         -->
+        <input type="file" name="filename"/><br />
+        <input type="hidden" name="hd" value="hdhdhd" /><br />
+        <input type="image" width="100px" src="../Penguins.jpg"/><br />
+        <input type="password" name="pw" /><br />
+        <!-- 
+            hidden : 코드로는 존재하나 화면에서 보이지 않음
+            password : 입력값이 *로 보여짐
+         -->
+         <input type="radio" name="gender" value="남"/>남
+         <input type="radio" name="gender" value="여"/>여<br />
+         <input type="radio" name="gender1" value="남"/>남
+         <input type="radio" name="gender2" value="여"/>여<br />
+         <!-- 
+            radio : 다중 선택이 불가능
+            하나의 name 안에서 하나의 value 선택 가능
+          -->
+         <input type="reset" value="리셋"/><br />
+         <input type="submit" value="입력"/>
+         <!-- 
+            기본 입력값
+            reset : 초기화
+            submit : 제출
+          -->
+    </form>
+</body>
+</html>
