@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        function subClick() {
+            var str = document.inputForm.id.value;
+            console.log(str);
+            // console.log("성공");
+            // if($('#id').val("")) {
+            //     console.log("아이디 입력하셈");
+            // }
+        }
+    </script>
 </head>
 <body>
-    <form name="inputForm" method="post"
+    <form name="inputForm">
     <div id="wrap">
         <table border="1">
             <tr>
@@ -76,7 +87,7 @@
                     <input type="checkbox" name="hobby">영화
                 </td>
             </tr>
-            <tr>
+            <tr>0
                 <td width="110px">자기소개</td>
                 <td width="440px">
                     <textarea name="textarea" id="textarea" cols="50" rows="5"></textarea>
@@ -84,12 +95,20 @@
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" value="입력"/>
+                    <input type="submit" value="입력" onclick="subClick();"/>
                     <input type="reset" value="취소"/>
                 </td>
             </tr>
         </table>
     </div>
     </form>
+
+    <script>
+        // let test = $('#id').val();
+        // console.log(test);
+        // documnet.input_form.id.value
+        // let test = document.getElementsByName('id');
+        // console.log(test);
+    </script>
 </body>
 </html>
